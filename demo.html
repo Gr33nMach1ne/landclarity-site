@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Demo — LandClarity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Land<span>Clarity</span></a>
+    <div class="nav-links">
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/pricing.html">Pricing</a>
+      <a href="/about.html">About</a>
+      <a href="/demo.html" class="cta-nav">Request a Demo</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Get Started</div>
+      <h2>See your title commitment analyzed.</h2>
+      <p>Send us a title commitment PDF. We'll run it through the pipeline and send you the MEIS report. No commitment, no credit card.</p>
+    </div>
+
+    <div class="demo-form">
+      <form action="https://formspree.io/f/placeholder" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Company name">
+        </div>
+        <div class="form-group">
+          <label for="role">Your Role</label>
+          <select id="role" name="role">
+            <option value="">Select your role</option>
+            <option value="vp_land">VP of Land / Acquisitions</option>
+            <option value="director">Director of Land</option>
+            <option value="analyst">Land Analyst</option>
+            <option value="pm">Project Manager</option>
+            <option value="attorney">Attorney / Legal</option>
+            <option value="executive">Executive</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pipeline">Active deals in your pipeline</label>
+          <select id="pipeline" name="pipeline_size">
+            <option value="">Select range</option>
+            <option value="1-5">1-5 deals</option>
+            <option value="6-15">6-15 deals</option>
+            <option value="16-30">16-30 deals</option>
+            <option value="30+">30+ deals</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" rows="3" placeholder="e.g. I have a title commitment I'd like analyzed ASAP"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;">Request Demo</button>
+        <div style="text-align:center;margin-top:14px;font-size:.82rem;color:var(--text-muted);">
+          We'll reply within one business day with your MEIS report.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>&copy; 2026 LandClarity. All rights reserved.</div>
+      <div>
+        <a href="/about.html">About</a> &nbsp;&middot;&nbsp;
+        <a href="/pricing.html">Pricing</a> &nbsp;&middot;&nbsp;
+        <a href="/demo.html">Request a Demo</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
