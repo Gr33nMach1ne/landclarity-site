@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How It Works — LandClarity</title>
+<title>How it works | LandClarity</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-brand">Land<span>Clarity</span></a>
     <div class="nav-links">
-      <a href="how-it-works.html">How It Works</a>
+      <a href="how-it-works.html">How it works</a>
       <a href="pricing.html">Pricing</a>
       <a href="about.html">About</a>
       <a href="demo.html" class="cta-nav">Get a free Title Risk Report</a>
@@ -22,22 +23,27 @@
   </div>
 </nav>
 
-<section class="hero" style="padding:60px 0;">
+<section class="hero" style="padding:80px 0;">
   <div class="container" style="text-align:center;">
-    <div class="section-label" style="color:rgba(255,255,255,.6);">How It Works</div>
+    <div class="section-label" style="color:rgba(255,255,255,.55);">How it works</div>
     <h1 style="color:#fff;">Title commitment in. Risk intelligence out.</h1>
-    <p style="color:rgba(255,255,255,.85);margin:16px auto 0;max-width:640px;">Upload a PDF. Our five-domain analysis pipeline reads every exception, classifies every encumbrance, and delivers a ranked Title Risk Report in the time it takes to get a coffee.</p>
+    <p style="font-family:var(--serif);font-weight:400;color:rgba(255,255,255,.88);margin:20px auto 0;max-width:640px;font-size:1.25rem;line-height:1.5;">Upload a PDF. A five-domain analysis pipeline reads every exception, classifies every encumbrance, and delivers a ranked Title Risk Report in minutes.</p>
   </div>
 </section>
 
-<!-- Title Risk Report — hero asset showcase -->
+<!-- Lead: the deliverable -->
 <section class="trr-showcase">
   <div class="trr-showcase-inner">
+    <div class="trr-showcase-lede">
+      <div class="section-label">The deliverable</div>
+      <h2>The Title Risk Report.</h2>
+      <p>A one-page report your VP can read in 90 seconds. Every material exception ranked by severity, every lifecycle stage scored, every action item prioritized.</p>
+    </div>
     <div class="trr-mockup trr-mockup--hero">
       <div class="trr-header">
         <div>
-          <div style="font-weight:800;font-size:1rem;color:var(--navy);">Title Risk Report</div>
-          <div style="font-size:.8rem;color:var(--text-muted);">Jordan Pointe — Tract 3</div>
+          <div style="font-family:var(--serif);font-weight:500;font-size:1.05rem;color:var(--navy);">Title Risk Report</div>
+          <div style="font-size:.8rem;color:var(--text-muted);">Jordan Pointe, Tract 3</div>
         </div>
         <div class="trr-signal signal-yellow">&#9679; YELLOW</div>
       </div>
@@ -57,62 +63,90 @@
         <div class="trr-type">Utility Easement (15ft boundary)</div>
         <div class="trr-bar"><div class="bar-seg bar-moderate"></div><div class="bar-seg bar-low"></div><div class="bar-seg bar-moderate"></div><div class="bar-seg bar-moderate"></div></div>
       </div>
-      <div style="margin-top:18px;padding-top:14px;border-top:1px solid #f3f0eb;font-size:.85rem;color:#92400e;font-weight:700;">
+      <div style="margin-top:18px;padding-top:14px;border-top:1px solid #f3f0eb;font-size:.85rem;color:#92400e;font-weight:500;">
         Request underlying drainage instrument before pricing.
       </div>
     </div>
-    <p class="trr-showcase-caption">A one-page report your VP can read in 90 seconds. Every material exception ranked by severity. A lifecycle bar showing exactly where the risk hits.</p>
+    <p class="trr-showcase-caption">Deal-level signal. Ranked exceptions. Lifecycle severity. The diligence actions tied to each risk, and the underlying documents you still need to pull.</p>
   </div>
 </section>
 
+<!-- What runs behind every Title Risk Report (compressed pipeline) -->
 <section class="section section-alt">
   <div class="container">
-    <div class="section-header" style="max-width:720px;margin-left:auto;margin-right:auto;">
-      <div class="section-label">What You Get</div>
-      <h2>The Title Risk Report.</h2>
-      <p style="color:var(--text-muted);margin:14px auto 0;">Deal-level signal. Ranked exceptions. Lifecycle severity. The diligence actions tied to each risk, and the underlying documents you still need to pull.</p>
+    <div class="section-header" style="max-width:720px;margin:0 auto 32px;">
+      <div class="section-label">The pipeline</div>
+      <h2>What runs behind every Title Risk Report.</h2>
+      <p>Five domains. One pass. Every risk scored.</p>
     </div>
-    <ul style="list-style:none;font-size:.95rem;color:var(--text-muted);max-width:640px;margin:0 auto;">
-      <li style="padding:6px 0;">&#10003; &nbsp;Deal-level risk signal: GREEN, YELLOW, or RED</li>
-      <li style="padding:6px 0;">&#10003; &nbsp;Ranked material encumbrances with plain-English descriptions</li>
-      <li style="padding:6px 0;">&#10003; &nbsp;Lifecycle severity bars for each exception</li>
-      <li style="padding:6px 0;">&#10003; &nbsp;Specific diligence actions tied to each risk</li>
-      <li style="padding:6px 0;">&#10003; &nbsp;Underlying document flags (what you still need to pull)</li>
-    </ul>
+    <div class="pipeline-list">
+      <div class="pipeline-item">
+        <div class="pipeline-item-num">1</div>
+        <div>
+          <div class="pipeline-item-name">Encumbrance Register</div>
+          <p>Reads Schedule B-II and maps every exception to one of forty canonical types.</p>
+        </div>
+      </div>
+      <div class="pipeline-item">
+        <div class="pipeline-item-num">2</div>
+        <div>
+          <div class="pipeline-item-name">Spatial Risk</div>
+          <p>Flags what each encumbrance does to buildable area, access, infrastructure, and setbacks.</p>
+        </div>
+      </div>
+      <div class="pipeline-item">
+        <div class="pipeline-item-num">3</div>
+        <div>
+          <div class="pipeline-item-name">Lifecycle Impact</div>
+          <p>Scores every encumbrance across acquisition diligence, zoning, engineering, and construction.</p>
+        </div>
+      </div>
+      <div class="pipeline-item">
+        <div class="pipeline-item-num">4</div>
+        <div>
+          <div class="pipeline-item-name">Acquisition Decision</div>
+          <p>Per-encumbrance call: affects pricing, extends diligence, or kills the deal.</p>
+        </div>
+      </div>
+      <div class="pipeline-item">
+        <div class="pipeline-item-num">5</div>
+        <div>
+          <div class="pipeline-item-name">Title Risk Report</div>
+          <p>Ranked material exceptions, GREEN, YELLOW, or RED signal, action items prioritized.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Why this rigor matters (supporting context moved from / per spec 2.1) -->
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <div class="section-label">The Pipeline</div>
-      <h2>Five domains. One pass. Every risk scored.</h2>
+      <div class="section-label">Why this rigor matters</div>
+      <h2>Title review is the bottleneck of every land deal.</h2>
+      <p>Your analyst reads 40 pages of legal language. Your VP waits days for a summary. You find the easement that kills the deal after you've already committed $15K in diligence.</p>
     </div>
-    <div class="pipeline-steps">
-      <div class="pipe-step">
-        <div class="pipe-icon">1</div>
-        <h4>Encumbrance Register</h4>
-        <p>Reads Schedule B-II. Extracts every exception. Maps each to one of 40 canonical types.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-num">1</div>
+        <h3>Manual review takes days</h3>
+        <p>An experienced analyst spends 2-4 hours per title commitment. A 10-lot deal is 20-40 hours before anyone sees a risk summary.</p>
       </div>
-      <div class="pipe-step">
-        <div class="pipe-icon">2</div>
-        <h4>Spatial Risk</h4>
-        <p>Flags what each encumbrance does to the dirt: buildable area, access, infrastructure, setbacks.</p>
+      <div class="problem-card">
+        <div class="problem-num">2</div>
+        <h3>Exceptions get missed</h3>
+        <p>Buried in Schedule B-II: a conservation easement that wipes out 2.5 buildable acres, a mineral rights reservation with no surface waiver. Found too late.</p>
       </div>
-      <div class="pipe-step">
-        <div class="pipe-icon">3</div>
-        <h4>Lifecycle Impact</h4>
-        <p>Scores every encumbrance across four stages: Acquisition DD, Zoning, Engineering, Construction.</p>
+      <div class="problem-card">
+        <div class="problem-num">3</div>
+        <h3>No standard severity language</h3>
+        <p>What does "material" mean? Every analyst has a different threshold. Your VP gets inconsistent risk signals across deals.</p>
       </div>
-      <div class="pipe-step">
-        <div class="pipe-icon">4</div>
-        <h4>Acquisition Decision</h4>
-        <p>Per-encumbrance go/no-go: affects pricing? Extend diligence? Kill the deal?</p>
-      </div>
-      <div class="pipe-step">
-        <div class="pipe-icon">5</div>
-        <h4>Title Risk Report</h4>
-        <p>Ranked material exceptions. GREEN / YELLOW / RED risk signal. Action items prioritized.</p>
+      <div class="problem-card">
+        <div class="problem-num">4</div>
+        <h3>Pricing happens without full context</h3>
+        <p>The go/no-go meeting happens before the title review is done. Price adjustments come after contracts are signed, not before.</p>
       </div>
     </div>
   </div>
@@ -121,7 +155,7 @@
 <section class="section section-alt" style="text-align:center;">
   <div class="container">
     <h2>Upload a title commitment. See it for yourself.</h2>
-    <p style="margin:12px auto 28px;color:var(--text-muted);">One PDF. Five minutes. A report you can hand to your VP.</p>
+    <p style="margin:18px auto 32px;color:var(--text-muted);">One PDF. Five minutes. A report you can hand to your VP.</p>
     <a href="demo.html" class="btn btn-dark">Get a free Title Risk Report</a>
   </div>
 </section>
