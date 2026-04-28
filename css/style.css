@@ -106,13 +106,13 @@ a { color: var(--navy); }
 }
 .nav-links .cta-nav:hover { background: var(--cream); }
 .nav-links .cta-nav-outline {
-  border: 1px solid rgba(255,255,255,.45);
-  color: rgba(255,255,255,.95);
-  padding: 7px 18px;
+  background: #B0B7C3;
+  color: var(--navy);
+  padding: 8px 20px;
   border-radius: 6px;
   font-weight: 500;
 }
-.nav-links .cta-nav-outline:hover { border-color: #fff; color: #fff; }
+.nav-links .cta-nav-outline:hover { background: #C8CDD5; }
 
 /* Hero */
 .hero {
