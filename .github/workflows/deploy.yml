@@ -1,0 +1,52 @@
+name: Deploy to Vercel
+
+# Pushes to main publish https://landclarity.ai automatically, so releasing a
+# copy change does not depend on anyone running a CLI command locally.
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_ORG_ID: team_sICFYOLlAvG5i3tL12Oly28R
+      VERCEL_PROJECT_ID: prj_4d95GS8SugQmSRNINi1h0OSgquM5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Vercel rejects deploys whose commit author is not on the target team.
+      - name: Strip git metadata
+        run: rm -rf .git
+
+      - name: Deploy to production
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          set -e
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN secret is not set on this repository." >&2
+            exit 1
+          fi
+          npx --yes vercel@latest deploy --prod --yes \
+            --scope matt-landclaritys-projects \
+            --token "$VERCEL_TOKEN"
+
+      - name: Verify the site is up
+        run: |
+          set -e
+          for i in $(seq 1 10); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' https://landclarity.ai/ || true)
+            echo "attempt $i: / -> $code"
+            if [ "$code" = "200" ]; then exit 0; fi
+            sleep 10
+          done
+          echo "landclarity.ai did not return 200 after deploy" >&2
+          exit 1
